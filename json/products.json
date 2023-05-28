@@ -1,0 +1,76 @@
+
+
+    [
+    {
+        "id": "1",
+        "name": "Женский Кардиган",
+        "price": "311",
+        "img": "@img/cardigan1.jpeg"
+    },
+    {
+        "id": "2",
+        "name": "Фотокамера Nikon",
+        "price": "129",
+        "img": "img/cars/camera_nikon.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Apple ipad",
+        "price": "129",
+        "img": "img/cars/ipad.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Samsung Galaxy",
+        "price": "129",
+        "img": "img/cars/phone_galaxy.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Телевизор SUPRA",
+        "price": "129",
+        "img": "img/cars/tv_supra.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Ноутбук Lenovo",
+        "price": "129",
+        "img": "img/cars/notebook_lenovo.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Фотокамера Nikon",
+        "price": "129",
+        "img": "img/cars/camera_nikon.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Apple ipad",
+        "price": "129",
+        "img": "img/cars/ipad.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Samsung Galaxy",
+        "price": "129",
+        "img": "img/cars/phone_galaxy.jpg"
+    },
+    {
+        "id": "10",
+        "name": "Телевизор SUPRA",
+        "price": "129",
+        "img": "img/cars/tv_supra.jpg"
+    },
+    {
+        "id": "11",
+        "name": "Ноутбук Lenovo",
+        "price": "129",
+        "img": "img/cars/notebook_lenovo.jpg"
+    },
+    {
+        "id": "12",
+        "name": "Пальто3",
+        "price": "129",
+        "img": "img/cars/camera_nikon.jpg"
+    }
+    ]

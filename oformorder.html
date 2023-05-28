@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230526175807">
+    <title>Оформление заказа</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__container">
+   
+        
+        <a href="index.html" class="header__logo logo">
+            <svg class="svg-logo-dims" >
+                <use xlink:href="../img/icons.svg#logo" ></use>
+            </svg> 
+             <div class="logo__logo-name">Womazing</div>
+            
+        </a>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="shop.html" class="menu__link">Магазин</a>
+                </li>
+                <li class="menu__item">
+                    <a href="obrende.html" class="menu__link">О бренде</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacts.html" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__dop">
+            <div class="header__telephone">
+                <button type="button" class="header__zvonok" >
+                    <svg class="svg-telephone-dims" >
+                        <use xlink:href="../img/icons.svg#telephone" class="ic2"></use>
+                    </svg>              
+                </button>
+                <div class="header__nomer nomer">
+                    <a href="" >+7 (495) 823-54-12</a>
+                </div>
+                
+            </div>
+            <a href="korzina.html"  class="header__bag" >
+                <svg class="svg-korzina-dims" >
+                    <use xlink:href="../img/icons.svg#korzina" ></use>
+                </svg>
+                <span class="header__bag-kol">1</span>              
+            </a>
+        </div>
+
+    </div>
+    
+</header>
+            <main class="main">
+                <section class="order">
+                    <div class="order__container">
+                        <div class="order__breadcrumb breadcrumb">
+                            <div class="breadcrumb__container">
+                                <h1>Оформление заказа</h1>
+                                <ul class="breadcrumb__list">
+                                    <li class="breadcrumb__item">
+                                        <a href="index.html" class="breadcrumb__link" >Главная</a>
+                                    </li>
+                                    <li class="breadcrumb__item">
+                                        <div class="breadcrumb__link" >Оформление заказа</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="order__content">
+                            <div class="order__form formorder">
+    <form action="#" id="formorder" class="formorder__body">
+        <div class="formorder__block">
+            <h3>Данные покупателя</h3>
+            <div class="formorder__inputs">
+                <div class="formorder__item"> 
+                    <label for="formName" class="formorder__label"></label>
+                    <input id="formName" type="text" name="name" class="formorder__input req" placeholder="Имя">
+                </div>
+                <div class="formorder__item"> 
+                    <label for="formEmail" class="formorder__label"> </label>
+                    <input id="formEmail" type="text" name="Email" class="formorder__input req email" placeholder="E-mail">
+                </div>
+                <div class="formorder__item"> 
+                    <label for="formTel" class="formorder__label"> </label>
+                    <input id="formTel" type="tel" name="Tel" class="formorder__input  req tel" placeholder="Телефон">
+                </div>
+            </div>
+        </div>
+        <div class="formorder__block">
+        <h3>Адрес получателя</h3>
+            <div class="formorder__inputs">
+                <div class="formorder__item"> 
+                    <label for="formCountry" class="formorder__label"></label>
+                    <input id="formCountry" type="text" name="country" class="formorder__input req" placeholder="Страна">
+                </div>
+                <div class="formorder__item"> 
+                    <label for="formCity" class="formorder__label"> </label>
+                    <input id="formCity" type="text" name="City" class="formorder__input req" placeholder="Город">
+                </div>
+                <div class="formorder__item"> 
+                    <label for="formStreet" class="formorder__label"> </label>
+                    <input id="formStreet" type="tel" name="Street" class="formorder__input  req " placeholder="Улица">
+                </div>
+                <div class="formorder__item"> 
+                    <label for="formHouse" class="formorder__label"></label>
+                    <input id="formHouse" type="text" name="House" class="formorder__input req" placeholder="Дом">
+                </div>
+                <div class="formorder__item"> 
+                    <label for="formkvartira" class="formorder__label"> </label>
+                    <input id="formkvartira" type="text" name="Email" class="formorder__input req " placeholder="Квартира">
+                </div>
+            </div>
+        </div>
+        <div class="formorder__block">
+            <h3>Комментарии</h3>
+            <div class="formorder__inputs">
+                <div class="formorder__item"> 
+                    <label for="formTel" class="formorder__label"> </label>
+                    <textarea id="formMes" type="text" name="Tel" class="formorder__input  req " placeholder="Сообщение"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+                            <div class="order__data">
+    <div class="order__data-info">
+        <h3>Ваш заказ</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><h4>Товар</h4></th>
+                    <th><h4>Всего</h4></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product-name"><p>Женский кардиган </p></div>
+                    </td>
+                    <td>
+                        <div ><p>$<span class="products-sum">311</span></p></div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><p>Подытог</p></td>
+                    <td><p>$<span id="total-cart-summa">311</span></p></td>
+                </tr>
+                <tr>
+                    <td><h3>Итого</h3></td>
+                    <td><h4>$<span id="total-cart-summa">311</span></h4></td>
+                    
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+        <div class="order__oplata oplata">
+            <h3>Способ оплаты</h3>
+            <div class="oplata__sposob">
+                <input type="checkbox" id="cash" checked class="oplata__checkbox">
+                <label for="cash" class="oplata__label"><p>Оплата наличными</p></label>
+            </div>
+            <button type="submit" form="formorder" class="oplata__button buttonblue">Разместить заказ</button>
+   
+        </div>
+
+    
+</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__navig">
+            <a href="index.html" class="header__logo logo">
+                <svg class="svg-logo-dims" >
+                    <use xlink:href="../img/icons.svg#logo" ></use>
+                </svg> 
+                <div class="logo__logo-name">Womazing</div>
+                
+            </a>
+            <nav class="footer__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                        
+                    </li>
+                    <li class="menu__item">
+                        <a href="shop.html" class="menu__link">Магазин</a>
+                        <ul class="magazinvid">
+                            <li ><a href="palto.html" class="magazinvid__link">Пальто</a></li>
+                            <li><a href="sweetshot.html" class="magazinvid__link">Свитшоты</a></li>
+                            <li><a href="cardigan.html" class="magazinvid__link">Кардиганы</a></li>
+                            <li><a href="tolstovki.html" class="magazinvid__link">Толстовки</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="obrende.html" class="menu__link">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__nomer nomer">
+                <a href="" >+7 (495) 823-54-12</a>
+                <a href="">hello@womazing.com</a>
+            </div>
+        </div>
+        <div class="footer__prava">© Все права защищены <br> Политика конфиденциальности <br> Публичная оферта</div>
+        <div class="footer__icons">
+        
+            <div class="footer__soc">
+                <a href="">
+                    <svg class="svg-instagram-dims" >
+                        <use xlink:href="../img/icons.svg#instagram" ></use>
+                    </svg>
+                </a>
+                <a href="">   
+                    <svg class="svg-facebook-dims" >
+                        <use xlink:href="../img/icons.svg#facebook" ></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="svg-twitter-dims" >
+                        <use xlink:href="../img/icons.svg#twitter" ></use>
+                    </svg> 
+                </a>  
+            </div>
+            <div class="footer__visa">
+                <picture><source srcset="img/visa-mastercard1.webp" type="image/webp"><img src="img/visa-mastercard1.png" alt=""></picture>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+        </div>
+        
+        <div id="zakaz" class="popup">
+    <div class="form">
+        <button type="button" class="form__close">
+            <svg class="svg-Close-dims" >
+                <use xlink:href="../img/icons.svg#Close" ></use>
+            </svg>    
+        </button>
+        <form action="#" id="form" class="form__body">
+            <h3>Заказать обратный звонок</h3>
+            <div class="form__item"> 
+                <label for="formName" class="form__label"></label>
+                <input id="formName" type="text" name="name" class="form__input req" placeholder="Имя">
+            </div>
+            <div class="form__item"> 
+                <label for="formEmail" class="form__label"> </label>
+                <input id="formEmail" type="text" name="Email" class="form__input req email" placeholder="E-mail">
+            </div>
+            <div class="form__item"> 
+                <label for="formTel" class="form__label"> </label>
+                <input id="formTel" type="tel" name="Tel" class="form__input  req tel" placeholder="Телефон">
+            </div>
+            <button type="submit" name="form1" class="form__button buttonblue">Заказать звонок</button>
+        </form>
+    </div>
+</div>
+<div id="message" class="popup">
+    <div class="popup__message message">
+        <div class="message__content">
+            <h3>Отлично! Мы скоро вам перезвоним.</h3>
+            <button type="button" class="message__button buttonwhite">Закрыть</button>
+        </div>
+    </div>
+    
+</div>
+        <script src="js/app.min.js?_v=20230526175807"></script>
+    </body>
+</html>

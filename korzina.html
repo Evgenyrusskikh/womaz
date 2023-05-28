@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230526175807">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+   
+        
+        <a href="index.html" class="header__logo logo">
+            <svg class="svg-logo-dims" >
+                <use xlink:href="../img/icons.svg#logo" ></use>
+            </svg> 
+             <div class="logo__logo-name">Womazing</div>
+            
+        </a>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="shop.html" class="menu__link">Магазин</a>
+                </li>
+                <li class="menu__item">
+                    <a href="obrende.html" class="menu__link">О бренде</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacts.html" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__dop">
+            <div class="header__telephone">
+                <button type="button" class="header__zvonok" >
+                    <svg class="svg-telephone-dims" >
+                        <use xlink:href="../img/icons.svg#telephone" class="ic2"></use>
+                    </svg>              
+                </button>
+                <div class="header__nomer nomer">
+                    <a href="" >+7 (495) 823-54-12</a>
+                </div>
+                
+            </div>
+            <a href="korzina.html"  class="header__bag" >
+                <svg class="svg-korzina-dims" >
+                    <use xlink:href="../img/icons.svg#korzina" ></use>
+                </svg>
+                <span class="header__bag-kol">1</span>              
+            </a>
+        </div>
+
+    </div>
+    
+</header>
+        <main class="main">
+            <div class="korzina">
+                <div class="korzina__container">
+                    <div class="korzina__breadcrumb breadcrumb">
+                        <div class="breadcrumb__container">
+                            <h1>Корзина</h1>
+                            <ul class="breadcrumb__list">
+                                <li class="breadcrumb__item">
+                                    <a href="index.html" class="breadcrumb__link" >Главная</a>
+                                </li>
+                                
+                                <li class="breadcrumb__item">
+                                    <div class="breadcrumb__link" >Корзина</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <table class="korzina__table table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" ><h4>Товар</h4></th>
+                                <th ><h4>Цена</h4></th>
+                                <th ><h4>Количество</h4></th>
+                                <th ><h4>Всего</h4></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart">
+                           
+                            <tr>
+                                <td>
+                                <button type="button" class="table__btnclose">
+                                    <svg class="svg-Close-dims" >
+                                        <use xlink:href="../img/icons.svg#Close" ></use>
+                                    </svg>    
+                                </button>
+                                </td>
+                                <td>
+                                    
+                                    <div class="table__oneitem">
+                                        <div class="table__image product-image">
+                                            <picture><source srcset="img/cardigan1.webp" type="image/webp"><img src="img/cardigan1.jpeg" alt=""></picture>
+                                        </div>
+                                        <div class="table__title product-name">
+                                            <p>Женский кардиган</p>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <span  id="item-price" class="table__cena-actual ">$<span class="product__price">311</span></span>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" class="table__kolichestvo product-quantity" >
+                                </td>
+                                <td>
+                                    <span  id="item-price" class="table__sum ">$<span class="products-sum">311</span></span>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="korzina__buttons">
+                        <div class="korzina__kupon kupon">
+                            <input placeholder="Введите купон" class="kupon__vvod"></input>
+                            <button type="submit" class="kupon__primen buttonwhite">Применить купон</button>                            
+                        </div>
+                        <button class="korzina__obnov buttonwhite btn-update">Обновить корзину</button>
+                    </div>
+                    <div class="korzina__itogo itogo">
+                        <div class="itogo__poditog">Подытог: <span id="total-cart-summa"></span></div>
+                        <div class="itogo__buttons">
+                            <div class="itogo__itog"><h3>Итого: <span id="total-cart-summa"></span></h3></div>
+                            <a href="oformorder.html"  id="order" class="itogo__oform buttonblue btn-info">Оформить заказ</a>
+                            
+                        </div>
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+           
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__navig">
+            <a href="index.html" class="header__logo logo">
+                <svg class="svg-logo-dims" >
+                    <use xlink:href="../img/icons.svg#logo" ></use>
+                </svg> 
+                <div class="logo__logo-name">Womazing</div>
+                
+            </a>
+            <nav class="footer__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                        
+                    </li>
+                    <li class="menu__item">
+                        <a href="shop.html" class="menu__link">Магазин</a>
+                        <ul class="magazinvid">
+                            <li ><a href="palto.html" class="magazinvid__link">Пальто</a></li>
+                            <li><a href="sweetshot.html" class="magazinvid__link">Свитшоты</a></li>
+                            <li><a href="cardigan.html" class="magazinvid__link">Кардиганы</a></li>
+                            <li><a href="tolstovki.html" class="magazinvid__link">Толстовки</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="obrende.html" class="menu__link">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__nomer nomer">
+                <a href="" >+7 (495) 823-54-12</a>
+                <a href="">hello@womazing.com</a>
+            </div>
+        </div>
+        <div class="footer__prava">© Все права защищены <br> Политика конфиденциальности <br> Публичная оферта</div>
+        <div class="footer__icons">
+        
+            <div class="footer__soc">
+                <a href="">
+                    <svg class="svg-instagram-dims" >
+                        <use xlink:href="../img/icons.svg#instagram" ></use>
+                    </svg>
+                </a>
+                <a href="">   
+                    <svg class="svg-facebook-dims" >
+                        <use xlink:href="../img/icons.svg#facebook" ></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="svg-twitter-dims" >
+                        <use xlink:href="../img/icons.svg#twitter" ></use>
+                    </svg> 
+                </a>  
+            </div>
+            <div class="footer__visa">
+                <picture><source srcset="img/visa-mastercard1.webp" type="image/webp"><img src="img/visa-mastercard1.png" alt=""></picture>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+    </div>
+    
+    <div id="zakaz" class="popup">
+    <div class="form">
+        <button type="button" class="form__close">
+            <svg class="svg-Close-dims" >
+                <use xlink:href="../img/icons.svg#Close" ></use>
+            </svg>    
+        </button>
+        <form action="#" id="form" class="form__body">
+            <h3>Заказать обратный звонок</h3>
+            <div class="form__item"> 
+                <label for="formName" class="form__label"></label>
+                <input id="formName" type="text" name="name" class="form__input req" placeholder="Имя">
+            </div>
+            <div class="form__item"> 
+                <label for="formEmail" class="form__label"> </label>
+                <input id="formEmail" type="text" name="Email" class="form__input req email" placeholder="E-mail">
+            </div>
+            <div class="form__item"> 
+                <label for="formTel" class="form__label"> </label>
+                <input id="formTel" type="tel" name="Tel" class="form__input  req tel" placeholder="Телефон">
+            </div>
+            <button type="submit" name="form1" class="form__button buttonblue">Заказать звонок</button>
+        </form>
+    </div>
+</div>
+<div id="message" class="popup">
+    <div class="popup__message message">
+        <div class="message__content">
+            <h3>Отлично! Мы скоро вам перезвоним.</h3>
+            <button type="button" class="message__button buttonwhite">Закрыть</button>
+        </div>
+    </div>
+    
+</div>
+    <script src="js/app.min.js?_v=20230526175807"></script>
+    <script id="cart-template" type="text/template">
+        <% _.each(goods, function(good) { %>
+            <tr class="cart-item js-cart-item" data-id="<%= good.id %>">
+                <td><%= good.id %></td>
+                <td><%- good.name %></td>
+                <td><%= good.price %> руб.</td>
+                <td>
+                    <span 
+                        class="cart-item__btn-dec-count js-change-count"
+                        title="Уменьшить на 1"
+                        data-id="<%= good.id %>"
+                        data-delta="-1"
+                    >
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </span>
+                    <span class="js-count"><%= good.count %></span>
+                    <span 
+                        class="cart-item__btn-inc-count js-change-count"
+                        title="Увеличить на 1"
+                        data-id="<%= good.id %>"
+                        data-delta="1"
+                    >
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </span>
+                </td>
+                <td><span class="js-summa"><%= good.count * good.price %></span> руб.</td>
+                <td>
+                    <span class="cart-item__btn-remove js-remove-from-cart" title="Удалить из корзины" data-id="<%= good.id %>">
+                        <span class="glyphicon glyphicon-remove"></span>                                
+                    </span>
+                </td>
+            </tr>
+        <% }); %>
+    </script>
+ 
+</body>
+</html>

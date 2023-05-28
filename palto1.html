@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230526175807">
+    <title>Магазин</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__container">
+   
+        
+        <a href="index.html" class="header__logo logo">
+            <svg class="svg-logo-dims" >
+                <use xlink:href="../img/icons.svg#logo" ></use>
+            </svg> 
+             <div class="logo__logo-name">Womazing</div>
+            
+        </a>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="shop.html" class="menu__link">Магазин</a>
+                </li>
+                <li class="menu__item">
+                    <a href="obrende.html" class="menu__link">О бренде</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacts.html" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__dop">
+            <div class="header__telephone">
+                <button type="button" class="header__zvonok" >
+                    <svg class="svg-telephone-dims" >
+                        <use xlink:href="../img/icons.svg#telephone" class="ic2"></use>
+                    </svg>              
+                </button>
+                <div class="header__nomer nomer">
+                    <a href="" >+7 (495) 823-54-12</a>
+                </div>
+                
+            </div>
+            <a href="korzina.html"  class="header__bag" >
+                <svg class="svg-korzina-dims" >
+                    <use xlink:href="../img/icons.svg#korzina" ></use>
+                </svg>
+                <span class="header__bag-kol">1</span>              
+            </a>
+        </div>
+
+    </div>
+    
+</header>
+            <main class="main">
+                <div class="oneitem">
+                    <div class="oneitem__container">
+                        <div class="oneitem__breadcrumb breadcrumb">
+                            <div class="breadcrumb__container">
+                                <h1>Магазин</h1>
+                                <ul class="breadcrumb__list">
+                                    <li class="breadcrumb__item">
+                                        <a href="index.html" class="breadcrumb__link" >Главная</a>
+                                    </li>
+                                    <li class="breadcrumb__item">
+                                        <a href="palto.html" class="breadcrumb__link" >Пальто</a>
+                                    </li>
+                                    <li class="breadcrumb__item">
+                                        <div class="breadcrumb__link good-item__name" >Демисезонное пальто</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="oneitem__item item">
+                            <div id="10" class="item__content">
+                                <div class="item__katinka">
+                                    <picture><source srcset="img/palto1.webp" type="image/webp"><img src="img/palto1.jpeg" alt=""></picture>
+
+                                </div>
+                                <div class="item__info">
+                                    <div class="item__cena">
+                                        <span  id="item-price" class="item__cena-actual ">$<span class="good-item__price">311</span></span>
+                                        <span class="item__cena-skidka">$450</span>
+
+                                    </div>
+                                    
+                                    <form class="item__form options">
+                                        <label for="razmer-select"><h4>Выберите размер</h4></label>
+                                        <div class="options__select-wrapper">
+                                            <div class="options__radiorazm">                                        
+                                            <input type="radio" id="S" name="razmer" class="options__razm"><label class="options__textrazm" for="S"> S</label>
+                                            </div>
+                                            <div class="options__radiorazm">                                        
+                                            <input type="radio" id="M" name="razmer" class="options__razm"> <label class="options__textrazm" for="M">M</label>
+                                            </div>
+                                            <div class="options__radiorazm">                                        
+                                            <input type="radio" id="L" name="razmer" class="options__razm"> <label class="options__textrazm" for="L">L</label>
+                                            </div>
+                                            <div class="options__radiorazm">                                        
+                                            <input type="radio" id="XL" name="razmer" class="options__razm"> <label class="options__textrazm" for="XL">XL</label>
+                                            </div>
+                                            <div class="options__radiorazm">                                        
+                                            <input type="radio" id="XXL" name="razmer" class="options__razm"> <label class="options__textrazm" for="XXL">2XL</label>
+                                            </div>
+                                          
+                                        </div>
+                                        <label for="color-select"><h4>Выберите цвет</h4></label>
+                                        <div class="options__select-wrapper">
+                                            <div class="options__radiocol">                                        
+                                                <input type="radio"  id="korich" name="color" class="options__color">
+                                            </div>
+                                            <div class="options__radiocol">                                        
+                                                <input type="radio" id="seriy" name="color" class="options__color"> 
+                                            </div>
+                                            <div class="options__radiocol">                                        
+                                                <input type="radio" id="purple" name="color" class="options__color">
+                                            </div>
+                                            <div class="options__radiocol">                                        
+                                                <input type="radio" id="zheltiy" name="color" class="options__color"> 
+                                            </div>
+                                        </div>
+                                        <div class="options__vkorz">
+                                            <input type="number" value="1" class="options__kolichestvo" >
+
+                                            <button type="button" id="10" class="options__button buttonblue good-item__btn-add btn btn-info btn-sm js-add-to-cart"
+                                            >Добавить в корзину</button>
+                                        </div>
+                                        
+                                      
+                                        
+                                    </form>
+                                </div>
+                                
+                               
+                                
+                            </div>
+                            <div class="item__svyaztov">
+                                <h2>Связанные товары</h2>
+                                <div class="item__twotov">
+                                    <div  id="11" class=" tovar ">
+                                        <a  href="" class="tovar__kartinka">
+                                            <picture><source srcset="img/palto2.webp" type="image/webp"><img src="img/palto2.jpeg" alt=""></picture>
+                                            <div class="overlay">
+                                                <svg class="svg-overlay-dims" >
+                                                    <use xlink:href="../img/icons.svg#overlay" ></use>
+                                                </svg>   
+                                            </div>
+                                            
+                                        </a>
+                                        
+                                        <div class="tovar__info">
+                                            <h4>Пальто2</h4>
+                                            <div class="tovar__dollar">
+                                                <div class="tovar__skidka"></div>
+                                                <div class="tovar__cena">$129</div>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                    <div  id="12" class=" tovar ">
+                                        <a href="" class="tovar__kartinka">
+                                            <picture><source srcset="img/palto3.webp" type="image/webp"><img src="img/palto3.jpeg" alt=""></picture>
+                                            <div class="overlay">
+                                                <svg class="svg-overlay-dims" >
+                                                    <use xlink:href="../img/icons.svg#overlay" ></use>
+                                                </svg>   
+                                            </div>
+                                        </a>
+                                        
+                                        <div  class="tovar__info">
+                                            <h4>Пальто3</h4>
+                                            <div class="tovar__dollar">
+                                                <div class="tovar__skidka"></div>
+                                                <div class="tovar__cena">$129</div>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+                
+            </main>
+            <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__navig">
+            <a href="index.html" class="header__logo logo">
+                <svg class="svg-logo-dims" >
+                    <use xlink:href="../img/icons.svg#logo" ></use>
+                </svg> 
+                <div class="logo__logo-name">Womazing</div>
+                
+            </a>
+            <nav class="footer__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                        
+                    </li>
+                    <li class="menu__item">
+                        <a href="shop.html" class="menu__link">Магазин</a>
+                        <ul class="magazinvid">
+                            <li ><a href="palto.html" class="magazinvid__link">Пальто</a></li>
+                            <li><a href="sweetshot.html" class="magazinvid__link">Свитшоты</a></li>
+                            <li><a href="cardigan.html" class="magazinvid__link">Кардиганы</a></li>
+                            <li><a href="tolstovki.html" class="magazinvid__link">Толстовки</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="obrende.html" class="menu__link">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__nomer nomer">
+                <a href="" >+7 (495) 823-54-12</a>
+                <a href="">hello@womazing.com</a>
+            </div>
+        </div>
+        <div class="footer__prava">© Все права защищены <br> Политика конфиденциальности <br> Публичная оферта</div>
+        <div class="footer__icons">
+        
+            <div class="footer__soc">
+                <a href="">
+                    <svg class="svg-instagram-dims" >
+                        <use xlink:href="../img/icons.svg#instagram" ></use>
+                    </svg>
+                </a>
+                <a href="">   
+                    <svg class="svg-facebook-dims" >
+                        <use xlink:href="../img/icons.svg#facebook" ></use>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="svg-twitter-dims" >
+                        <use xlink:href="../img/icons.svg#twitter" ></use>
+                    </svg> 
+                </a>  
+            </div>
+            <div class="footer__visa">
+                <picture><source srcset="img/visa-mastercard1.webp" type="image/webp"><img src="img/visa-mastercard1.png" alt=""></picture>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+        </div>
+        
+        <div id="zakaz" class="popup">
+    <div class="form">
+        <button type="button" class="form__close">
+            <svg class="svg-Close-dims" >
+                <use xlink:href="../img/icons.svg#Close" ></use>
+            </svg>    
+        </button>
+        <form action="#" id="form" class="form__body">
+            <h3>Заказать обратный звонок</h3>
+            <div class="form__item"> 
+                <label for="formName" class="form__label"></label>
+                <input id="formName" type="text" name="name" class="form__input req" placeholder="Имя">
+            </div>
+            <div class="form__item"> 
+                <label for="formEmail" class="form__label"> </label>
+                <input id="formEmail" type="text" name="Email" class="form__input req email" placeholder="E-mail">
+            </div>
+            <div class="form__item"> 
+                <label for="formTel" class="form__label"> </label>
+                <input id="formTel" type="tel" name="Tel" class="form__input  req tel" placeholder="Телефон">
+            </div>
+            <button type="submit" name="form1" class="form__button buttonblue">Заказать звонок</button>
+        </form>
+    </div>
+</div>
+<div id="message" class="popup">
+    <div class="popup__message message">
+        <div class="message__content">
+            <h3>Отлично! Мы скоро вам перезвоним.</h3>
+            <button type="button" class="message__button buttonwhite">Закрыть</button>
+        </div>
+    </div>
+    
+</div>
+        <script src="js/app.min.js?_v=20230526175807"></script>
+        <script id="catalog-template" type="text/template">
+            <% _.each(goods, function(good) { %>
+                <li class="good-item row">
+                    <div class="col-md-4">
+                        <img class="good-item__img" src="<%- good.img %>" />
+                    </div>
+                    <div class="col-md-8">
+                        
+                        <div class="good-item__name"><%- good.name %></div>
+                        <div class="good-item__price"><%= good.price %> руб.</div>
+                        <button 
+                            class="good-item__btn-add btn btn-info btn-sm js-add-to-cart"
+                            data-id="<%= good.id %>"
+                            data-name="<%- good.name %>"
+                            data-price="<%= good.price %>"
+                        >Добавить в корзину</button>
+                    </div>
+                </li>
+            <% }); %>
+        </script>
+    </body>
+</html>
