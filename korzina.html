@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230528184743">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230530135413">
     <title>Главная</title>
 </head>
 
@@ -21,22 +21,29 @@
              <div class="logo__logo-name">Womazing</div>
             
         </a>
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a href="index.html" class="menu__link">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a href="shop.html" class="menu__link">Магазин</a>
-                </li>
-                <li class="menu__item">
-                    <a href="obrende.html" class="menu__link">О бренде</a>
-                </li>
-                <li class="menu__item">
-                    <a href="contacts.html" class="menu__link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__menu menu">
+            <div class="menu__icon icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="shop.html" class="menu__link">Магазин</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="obrende.html" class="menu__link">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="header__dop">
             <div class="header__telephone">
                 <button type="button" class="header__zvonok" >
@@ -56,7 +63,7 @@
                 <span class="header__bag-kol">1</span>              
             </a>
         </div>
-
+        
     </div>
     
 </header>
@@ -89,14 +96,14 @@
                         <tbody id="cart">
                            
                             <tr>
-                                <td>
+                                <td >
                                 <button type="button" class="table__btnclose">
                                     <svg class="svg-Close-dims" >
                                         <use xlink:href="img/icons.svg#Close" ></use>
                                     </svg>    
                                 </button>
                                 </td>
-                                <td>
+                                <td data-label="Товар">
                                     
                                     <div class="table__oneitem">
                                         <div class="table__image product-image">
@@ -107,14 +114,14 @@
                                         </div>
                                     </div>
                                     
-                                </td>
-                                <td>
+                                </td >
+                                <td data-label="Цена">
                                     <span  id="item-price" class="table__cena-actual ">$<span class="product__price">311</span></span>
                                 </td>
-                                <td>
+                                <td data-label="Количество">
                                     <input type="number" value="1" class="table__kolichestvo product-quantity" >
                                 </td>
-                                <td>
+                                <td data-label="Всего">
                                     <span  id="item-price" class="table__sum ">$<span class="products-sum">311</span></span>
                                 </td>
 
@@ -244,7 +251,7 @@
     </div>
     
 </div>
-    <script src="js/app.min.js?_v=20230528184743"></script>
+    <script src="js/app.min.js?_v=20230530135413"></script>
     <script id="cart-template" type="text/template">
         <% _.each(goods, function(good) { %>
             <tr class="cart-item js-cart-item" data-id="<%= good.id %>">
