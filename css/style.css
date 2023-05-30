@@ -2652,6 +2652,10 @@ p {
     height: 60px;
   }
 
+  .message__content {
+    margin: 0 !important;
+  }
+
   .korzina__table {
     padding-top: 100px;
   }
@@ -2932,8 +2936,13 @@ p {
     width: 72px;
     position: absolute;
     width: 72px;
-    right: 73px;
+    right: 83px;
     top: 22px;
+  }
+
+  .header__bag-kol {
+    top: -9.77px;
+    font-size: 7px;
   }
 
   .menu {
@@ -3143,6 +3152,20 @@ p {
 
   [class*=__content] {
     margin: 60px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 620px) {
+  .form {
+    width: 350px;
+  }
+
+  .form__body {
+    width: 260px;
+  }
+
+  .message {
+    width: 370px;
   }
 }
 
