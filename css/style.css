@@ -2778,6 +2778,23 @@ p {
   }
 }
 
+@media (max-width: 1000px) {
+  .oneitem__container {
+    gap: 60px;
+  }
+
+  .item__content {
+    margin: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 @media (max-width: 960px) {
   .contacts__container {
     gap: 60px;
@@ -2969,6 +2986,18 @@ p {
 
   .menu__link {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .item__twotov {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -3209,5 +3238,12 @@ p {
 
   .korzina__table {
     padding-top: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .item__katinka {
+    width: 268px;
+    height: 365px;
   }
 }
